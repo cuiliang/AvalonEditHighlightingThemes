@@ -98,6 +98,8 @@ namespace HL.Xshtd
 		/// </summary>
 		public FontStyle? FontStyle { get; set; }
 
+		public int? FontSize { get; set; }
+
 		/// <summary>
 		/// Gets/Sets the example text that demonstrates where the color is used.
 		/// </summary>

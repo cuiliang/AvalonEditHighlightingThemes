@@ -38,16 +38,21 @@ namespace HL.Resources
 			if (theme.IsBuiltInThemesRegistered == true)
 				return;
 
-			hlm.RegisterHighlighting(theme, "XmlDoc", null, "XmlDoc.xshd");
 
-			hlm.RegisterHighlighting(theme, "C#", new[] { ".cs" }, "CSharp-Mode.xshd");
+
+            hlm.RegisterHighlighting(theme, "XmlDoc", null, "XmlDoc.xshd");
+
+
+            hlm.RegisterHighlighting(theme, "C#", new[] { ".cs" }, "CSharp-Mode.xshd");
+
+            
 
 			hlm.RegisterHighlighting(theme, "JavaScript", new[] { ".js" }, "JavaScript-Mode.xshd");
 			hlm.RegisterHighlighting(theme, "HTML", new[] { ".htm", ".html" }, "HTML-Mode.xshd");
 			hlm.RegisterHighlighting(theme, "ASP/XHTML", new[] { ".asp", ".aspx", ".asax", ".asmx", ".ascx", ".master" }, "ASPX.xshd");
 
-			hlm.RegisterHighlighting(theme, "Boo", new[] { ".boo" }, "Boo.xshd");
-			hlm.RegisterHighlighting(theme, "Coco", new[] { ".atg" }, "Coco-Mode.xshd");
+			//hlm.RegisterHighlighting(theme, "Boo", new[] { ".boo" }, "Boo.xshd");
+			//hlm.RegisterHighlighting(theme, "Coco", new[] { ".atg" }, "Coco-Mode.xshd");
 			hlm.RegisterHighlighting(theme, "CSS", new[] { ".css" }, "CSS-Mode.xshd");
 			hlm.RegisterHighlighting(theme, "C++", new[] { ".c", ".h", ".cc", ".cpp", ".hpp" }, "CPP-Mode.xshd");
 			hlm.RegisterHighlighting(theme, "Java", new[] { ".java" }, "Java-Mode.xshd");
@@ -65,10 +70,11 @@ namespace HL.Resources
 											 "XML-Mode.xshd");
 
 			hlm.RegisterHighlighting(theme, "MarkDown", new[] { ".md" }, "MarkDown-Mode.xshd");
+            hlm.RegisterHighlighting(theme, "MarkDownWithFontSize", new[] { ".md" }, "MarkDownWithFontSize-Mode.xshd");
 
-			// Additional Highlightings
+            // Additional Highlightings
 
-			hlm.RegisterHighlighting(theme, "ActionScript3", new[] { ".as" }, "AS3.xshd");
+            hlm.RegisterHighlighting(theme, "ActionScript3", new[] { ".as" }, "AS3.xshd");
 			hlm.RegisterHighlighting(theme, "BAT", new[] { ".bat", ".dos" }, "DOSBATCH.xshd");
 			hlm.RegisterHighlighting(theme, "F#", new[] { ".fs" }, "FSharp-Mode.xshd");
 			hlm.RegisterHighlighting(theme, "HLSL", new[] { ".fx" }, "HLSL.xshd");
@@ -82,7 +88,15 @@ namespace HL.Resources
 			hlm.RegisterHighlighting(theme, "TXT", new[] { ".txt" }, "TXT.xshd");
 			hlm.RegisterHighlighting(theme, "VTL", new[] { ".vtl", ".vm" }, "vtl.xshd");
 
-			theme.IsBuiltInThemesRegistered = true;
+
+			
+			hlm.RegisterHighlighting(theme, "Json", new string[] { ".json"}, "Json.xshd");
+
+            hlm.RegisterHighlighting(theme, "QuickerInterpolation", new string[] { }, "QuickerInterpolation.xshd");
+            hlm.RegisterHighlighting(theme, "QuickerExpression", new string[] { }, "QuickerExpression.xshd");
+
+
+            theme.IsBuiltInThemesRegistered = true;
 		}
 	}
 }

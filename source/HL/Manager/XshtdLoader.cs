@@ -243,8 +243,10 @@ namespace HL.Manager
 			color.FontWeight = ParseFontWeight(reader.GetAttribute("fontWeight"));
 			color.FontStyle = ParseFontStyle(reader.GetAttribute("fontStyle"));
 			color.Underline = reader.GetBoolAttribute("underline");
+            color.FontSize = ParseFontSize(position, reader.GetAttribute("fontSize"));
 
-			return color;
+
+            return color;
 		}
 
 		internal readonly static ColorConverter ColorConverter = new ColorConverter();
@@ -261,7 +263,15 @@ namespace HL.Manager
 				return FixedColorHighlightingBrush((Color?)ColorConverter.ConvertFromInvariantString(color));
 		}
 
-		internal static SystemColorHighlightingBrush GetSystemColorBrush(IXmlLineInfo lineInfo, string name)
+        static int? ParseFontSize(IXmlLineInfo lineInfo, string size)
+        {
+            int value;
+            return int.TryParse(size, out value)
+                ? value
+                : (int?)null;
+        }
+
+        internal static SystemColorHighlightingBrush GetSystemColorBrush(IXmlLineInfo lineInfo, string name)
 		{
 			Debug.Assert(name.StartsWith("SystemColors.", StringComparison.Ordinal));
 			string shortName = name.Substring(13);

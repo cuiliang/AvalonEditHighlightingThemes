@@ -345,8 +345,13 @@ namespace HL.Xshtd
 				highColor.Underline = color.Underline;
 				highColor.FontStyle = color.FontStyle;
 				highColor.FontWeight = color.FontWeight;
+				highColor.FontSize = color.FontSize;
+                
 
-				return highColor;
+               
+
+
+                return highColor;
 			}
 
 			/// <summary>

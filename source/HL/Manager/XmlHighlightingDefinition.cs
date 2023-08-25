@@ -203,7 +203,11 @@ namespace HL.Manager
 					c.Underline = color.Underline;
 					c.FontStyle = color.FontStyle;
 					c.FontWeight = color.FontWeight;
-				}
+                    c.FontSize = color.FontSize;
+					c.FontFamily = color.FontFamily;
+                    c.Strikethrough = color.Strikethrough;
+                    
+                }
 
 				return c;
 			}

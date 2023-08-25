@@ -20,29 +20,36 @@ namespace HL.Manager
 		/// </summary>
 		static DefaultHighlightingManager()
 		{
-			var defaultManager = new DefaultHighlightingManager();
+            try
+            {
+                var defaultManager = new DefaultHighlightingManager();
 
-			var theme = new HLTheme("Dark", "Light", "Dark",
-									HL_THEMES_NAMESPACE_ROOT, "Dark.xshtd", defaultManager);
-			defaultManager.ThemedHighlightingAdd(theme.Key, theme);
+                var theme = new HLTheme("Dark", "Light", "Dark",
+                    HL_THEMES_NAMESPACE_ROOT, "Dark.xshtd", defaultManager);
+                defaultManager.ThemedHighlightingAdd(theme.Key, theme);
 
-			theme = new HLTheme("Light", HL_GENERIC_NAMESPACE_ROOT, "Light");
-			defaultManager.ThemedHighlightingAdd(theme.Key, theme);
+                theme = new HLTheme("Light", HL_GENERIC_NAMESPACE_ROOT, "Light");
+                defaultManager.ThemedHighlightingAdd(theme.Key, theme);
 
-			// Setup default theme without registration of Highlightings
-			defaultManager.SetCurrentThemeInternal(theme.Key);
+                // Setup default theme without registration of Highlightings
+                defaultManager.SetCurrentThemeInternal(theme.Key);
 
-			theme = new HLTheme("TrueBlue", "Light", "True Blue",
-								HL_THEMES_NAMESPACE_ROOT, "TrueBlue.xshtd", defaultManager);
-			defaultManager.ThemedHighlightingAdd(theme.Key, theme);
+                theme = new HLTheme("TrueBlue", "Light", "True Blue",
+                    HL_THEMES_NAMESPACE_ROOT, "TrueBlue.xshtd", defaultManager);
+                defaultManager.ThemedHighlightingAdd(theme.Key, theme);
 
-			theme = new HLTheme("VS2019_Dark", "Light", "VS2019 Dark",
-								HL_THEMES_NAMESPACE_ROOT, "VS2019_Dark.xshtd", defaultManager);
-			defaultManager.ThemedHighlightingAdd(theme.Key, theme);
+                theme = new HLTheme("VS2019_Dark", "Light", "VS2019 Dark",
+                    HL_THEMES_NAMESPACE_ROOT, "VS2019_Dark.xshtd", defaultManager);
+                defaultManager.ThemedHighlightingAdd(theme.Key, theme);
 
-			HLResources.RegisterBuiltInHighlightings(defaultManager, defaultManager.CurrentTheme);
+                HLResources.RegisterBuiltInHighlightings(defaultManager, defaultManager.CurrentTheme);
 
-			Instance = defaultManager;
+                Instance = defaultManager;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
 		}
 
 		/// <summary>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0"?>
+<SyntaxDefinition name="QuickerInterpolation" xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">	
+	<Color name="QuickerVariable" fontWeight="bold" foreground="Red" exampleText="{var}" />
+	<Color name="QuickerFlag" fontWeight="bold" foreground="Blue" exampleText="{var}" />
+	<!-- This is the main ruleset. -->
+	<RuleSet>
+		<Span color="QuickerFlag" multiline="true" fontWeight="bold">  
+			<Begin>^\$\$</Begin>
+			<End></End>
+		</Span>
+		<Span color="QuickerVariable" multiline="false" begin="{[^\s}]+}" end="" />
+	</RuleSet>
+</SyntaxDefinition>

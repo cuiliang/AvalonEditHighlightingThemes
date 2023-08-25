@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
-    <TargetFrameworks>net4;netcoreapp3.0</TargetFrameworks>
+    <TargetFrameworks>net472;</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <Version>1.0.4</Version>
     <AssemblyVersion>1.0.4</AssemblyVersion>
@@ -11,7 +11,7 @@
     <Copyright>2019-2020</Copyright>
     <Description>This assembly implements a docking layout system for WPF.</Description>
 
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/Dirkster99/HL</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Dirkster99/HL</RepositoryUrl>
     <PackageId>Dirkster.HL</PackageId>
@@ -24,7 +24,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="images/icon.png" Pack="true" PackagePath=""/>
+    <None Include="images/icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>
@@ -45,14 +45,18 @@
     <None Remove="Resources\Light\INI.xshd" />
     <None Remove="Resources\Light\Java-Mode.xshd" />
     <None Remove="Resources\Light\JavaScript-Mode.xshd" />
+    <None Remove="Resources\Light\Json.xshd" />
     <None Remove="Resources\Light\Log.xshd" />
     <None Remove="Resources\Light\MarkDown-Mode.xshd" />
+    <None Remove="Resources\Light\MarkDownWithFontSize-Mode.xshd" />
     <None Remove="Resources\Light\Pascal.xshd" />
     <None Remove="Resources\Light\Patch-Mode.xshd" />
     <None Remove="Resources\Light\PHP-Mode.xshd" />
     <None Remove="Resources\Light\PLSQL.xshd" />
     <None Remove="Resources\Light\PowerShell.xshd" />
     <None Remove="Resources\Light\Python-Mode.xshd" />
+    <None Remove="Resources\Light\QuickerExpression.xshd" />
+    <None Remove="Resources\Light\QuickerInterpolation.xshd" />
     <None Remove="Resources\Light\Ruby.xshd" />
     <None Remove="Resources\Light\scheme.xshd" />
     <None Remove="Resources\Light\squirrel.xshd" />
@@ -92,14 +96,18 @@
     <EmbeddedResource Include="Resources\Light\INI.xshd" />
     <EmbeddedResource Include="Resources\Light\Java-Mode.xshd" />
     <EmbeddedResource Include="Resources\Light\JavaScript-Mode.xshd" />
+    <EmbeddedResource Include="Resources\Light\Json.xshd" />
     <EmbeddedResource Include="Resources\Light\Log.xshd" />
     <EmbeddedResource Include="Resources\Light\MarkDown-Mode.xshd" />
+    <EmbeddedResource Include="Resources\Light\MarkDownWithFontSize-Mode.xshd" />
     <EmbeddedResource Include="Resources\Light\Pascal.xshd" />
     <EmbeddedResource Include="Resources\Light\Patch-Mode.xshd" />
     <EmbeddedResource Include="Resources\Light\PHP-Mode.xshd" />
     <EmbeddedResource Include="Resources\Light\PLSQL.xshd" />
     <EmbeddedResource Include="Resources\Light\PowerShell.xshd" />
     <EmbeddedResource Include="Resources\Light\Python-Mode.xshd" />
+    <EmbeddedResource Include="Resources\Light\QuickerExpression.xshd" />
+    <EmbeddedResource Include="Resources\Light\QuickerInterpolation.xshd" />
     <EmbeddedResource Include="Resources\Light\Ruby.xshd" />
     <EmbeddedResource Include="Resources\Light\scheme.xshd" />
     <EmbeddedResource Include="Resources\Light\squirrel.xshd" />
