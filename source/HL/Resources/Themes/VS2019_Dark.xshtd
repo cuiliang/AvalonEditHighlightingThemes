@@ -561,7 +561,7 @@
 		<Color name="QuickerFlag"   foreground="#397EFD"/>
 	</SyntaxDefinition>
 
-	<SyntaxDefinition name="Name_QuickerExpression">
+	<SyntaxDefinition name="QuickerExpression">
 		<Color name="QuickerVariable"   foreground="#FF6E6E"/>
 		<Color name="QuickerFlag"   foreground="#60FD39"/>
 
