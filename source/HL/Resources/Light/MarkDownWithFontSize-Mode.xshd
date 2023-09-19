@@ -8,7 +8,8 @@
     <Color name="Heading6" foreground="Maroon" fontSize="15" exampleText="# Title #" />
     <Color name="Emphasis" fontStyle="italic" exampleText="*this* is important!" />
 	<Color name="StrongEmphasis" fontWeight="bold" exampleText="**this** is more important!" />
-	<Color name="Code" fontFamily="Footlight MT Light" exampleText="this is `int.GetHashCode()`" />
+    <Color name="InlineCode" foreground="#705711" background="#F0F0F0" fontFamily="Consolas" exampleText="this is `int.GetHashCode()`" />
+	<Color name="Code" foreground="#705711" fontFamily="Consolas" exampleText="this is `int.GetHashCode()`" />
 	<Color name="BlockQuote" foreground="DarkBlue" exampleText="&gt; This is a\r\n&gt; quote." />
 	<Color name="Link" foreground="Blue" exampleText="[text](http://example.com)" />
 	<Color name="Image" foreground="Green" exampleText="[text][http://example.com/test.png]" />
@@ -45,9 +46,13 @@
 		<Rule color="Emphasis">
 			_.*_
 		</Rule>
-		<Rule color="Code">
-			`.*`
+		<Rule color="InlineCode">
+			`(.*?)`
 		</Rule>
+		<Span color="Code" ruleSet="C#/" multiline="true">
+			<Begin>^```</Begin>
+			<End>^```$</End>
+		</Span>
 		<Span color="Code" ruleSet="C#/" multiline="true">
 			<Begin>^\t</Begin>
 			<End>^(?!\t)</End>

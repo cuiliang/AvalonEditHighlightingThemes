@@ -283,6 +283,7 @@
     <Color name="Heading"        foreground="#FF92caf4"  exampleText="# Title #"/>
     <Color name="Emphasis"       fontStyle="italic" exampleText="*this* is important!"/>
     <Color name="StrongEmphasis" fontWeight="bold" exampleText="**this** is more important!"/>
+    <Color name="InlineCode"     foreground="#FFffd68f" background="#303030"  exampleText="this is `int.GetHashCode()`" />
     <Color name="Code"           foreground="#FFffd68f" exampleText="this is `int.GetHashCode()`"/>
     <Color name="BlockQuote"     foreground="#FFD69D85" exampleText="&gt; This is a\r\n&gt; quote." />
     <Color name="Link"           foreground="#FF92caf4" exampleText="[text](http://example.com)"/>
@@ -300,6 +301,7 @@
     <Color name="Heading"        foreground="#FF92caf4"  exampleText="# Title #"/>
     <Color name="Emphasis"       fontStyle="italic" exampleText="*this* is important!"/>
     <Color name="StrongEmphasis" fontWeight="bold" exampleText="**this** is more important!"/>
+	<Color name="InlineCode"     foreground="#FFffd68f" background="#303030"  exampleText="this is `int.GetHashCode()`" />
     <Color name="Code"           foreground="#FFffd68f" exampleText="this is `int.GetHashCode()`"/>
     <Color name="BlockQuote"     foreground="#FFD69D85" exampleText="&gt; This is a\r\n&gt; quote." />
     <Color name="Link"           foreground="#FF92caf4" exampleText="[text](http://example.com)"/>
