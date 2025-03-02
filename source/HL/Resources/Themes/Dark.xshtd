@@ -290,6 +290,7 @@
 	  <Color name="Link"           foreground="#FF4080FF" exampleText="[text](http://example.com)" />
 	  <Color name="Image"          foreground="#FF4080FF" exampleText="[text][http://example.com/test.png]" />
 	  <Color name="LineBreak"      background="#FF222222" exampleText="end of line      \r\n2nd line   " />
+	  <Color name="think" foreground="#999999"  exampleText=""/>
   </SyntaxDefinition>
 
   <SyntaxDefinition name = "Pascal" extensions = ".pas">

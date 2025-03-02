@@ -289,6 +289,7 @@
     <Color name="Link"           foreground="#FF92caf4" exampleText="[text](http://example.com)"/>
     <Color name="Image"          foreground="#FF92caf4" exampleText="[text][http://example.com/test.png]"/>
     <Color name="LineBreak"      foreground="#FF9B9B9B" exampleText="end of line      \r\n2nd line   "/>
+    <Color name="think" foreground="#999999"  exampleText=""/>
   </SyntaxDefinition>
 	
 	<SyntaxDefinition name="MarkDownWithFontSize" extensions=".md">
