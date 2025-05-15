@@ -602,7 +602,20 @@
 		<Color name="CommentMarkerSetTodo"       foreground="#FFFF0000" fontWeight="bold" />
 		<Color name="CommentMarkerSetHackUndone" foreground="#FF8B008B" fontWeight="bold" />
 	</SyntaxDefinition>
-
+	<SyntaxDefinition name="Json" extensions=".json">
+		<!-- 布尔值：淡蓝 -->
+		<Color name="Bool"       foreground="#569CD6" exampleText="true | false" />
+		<!-- 数字：淡绿 -->
+		<Color name="Number"     foreground="#B5CEA8" exampleText="3.14" />
+		<!-- 字符串：橙色 -->
+		<Color name="String"     foreground="#CE9178" exampleText="" />
+		<!-- null：淡黄色 -->
+		<Color name="Null"       foreground="#DCDCAA" exampleText="null" />
+		<!-- 字段名：浅蓝 -->
+		<Color name="FieldName"  foreground="#9CDCFE" />
+		<!-- 标点符号：浅灰 -->
+		<Color name="Punctuation" foreground="#D4D4D4" />
+	</SyntaxDefinition>
   <GlobalStyles>
     <!-- Background and foreground color of the default text (without highlighting) in the text editor -->
     <DefaultStyle foreground="#FFF1F2F3" background="#FF1E1E1E" />
