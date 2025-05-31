@@ -9,19 +9,29 @@
     <Company>Open Source</Company>
     <Product>Dirkster.HL</Product>
     <Copyright>2019-2020</Copyright>
-    <Description>This assembly implements a docking layout system for WPF.</Description>
+    <Description>Implements a sample implementation for using Highlightings with different (Light/Dark) WPF themes</Description>
 
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <PackageProjectUrl>https://github.com/Dirkster99/HL</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/Dirkster99/HL</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/cuiliang/AvalonEditHighlightingThemes</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cuiliang/AvalonEditHighlightingThemes</RepositoryUrl>
     <PackageId>Dirkster.HL</PackageId>
-    <Authors>https://github.com/Dirkster99/HL</Authors>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Authors>https://github.com/Dirkster99/AvalonEditHighlightingThemes</Authors>
 
     <PackageIcon>icon.png</PackageIcon>
     <PackageTags>avalonedit dark-theme light-theme theming highlighting</PackageTags>
     <PackageReleaseNotes>Mutlitargetting NetCore3 and Net 4.0</PackageReleaseNotes>
   </PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>Quicker.HL</PackageId>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>d:\cert\cert2022\quicker.snk</AssemblyOriginatorKeyFile>
+	</PropertyGroup>
 
   <ItemGroup>
     <None Include="images/icon.png" Pack="true" PackagePath="" />
@@ -124,7 +134,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AvalonEdit" Version="6.0.1" />
+    <PackageReference Include="Quicker.AvalonEdit" Version="6.3.1" />
   </ItemGroup>
 
   <!-- NuGet Packaging -->
